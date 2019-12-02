@@ -1,0 +1,18 @@
+html
+	include head.pug
+	body
+		.buscador: form: input(type="text" placeholder="Playstation" class="buscador__input")
+		header.encabezado--con-filtros
+			h2 20 Resultados para "Playstation"
+			.filtros
+				span Filtrar Por
+				a(href="#" class="fa fa-th-large")
+				a(href="#" class="fa fa-bars")
+		section.contenido
+			+caja("apex.jpg", "Video", "Apex Legends Temporada 2: un nuevo trailer muestra cambios al mapa", "Dos nuevos trailers de Apex Legends muestran lo que nos espera en la Temporada 2 del battle royale de Respawn.")
+			+caja("crash.jpg", "Video", "Ya salio la reseña de Crash Team Racing Nitro Fueled", "Veinte años después del lanzamiento del original, Crash Team Racing ha recibido un remake total que logra mantener todos los aspectos originales.")
+			+caja("ff.jpg", "Video", "Final Fantasy XIV recibirá una serie live-action en televisión ", "Final Fantasy XIV Online recibirá una adaptación aTV de parte de Square Enix con Sony Pictures Television y Hivemind.")
+		section.contenido--sin-imagenes.contenido
+			+caja--sin-imagen("PES 2020 OBTIENE ACUERDO CON EL MANCHESTER UNITED", "Konami ha anunciado que han firmado un acuerdo con el club de futbol inglés Manchester Unites para ser incluido en el juego")
+			+caja--sin-imagen("Esta es la tecnología que arrasa en ingeniería y construcción", "El mundo se revolucionó con las tecnologías en 3D y 4D. Ahora, una nueva revolución se está dando en las obras de infraestructura: la implementación de la metodología Modelado de Información de Construcción, conocida como BIM (Building Information Modeling, por su sigla en inglés).")
+			+caja--sin-imagen("Dilan Cruz, símbolo de las protestas en Colombia", "Dilan Cruz, el joven que fue herido el sábado en Bogotá durante una protesta en la que la Fuerza Pública disparó bombas de aturdimiento y gases lacrimógenos, falleció este lunes, según informó el Hospital Universitario San Ignacio, donde se encontraba en la unidad de cuidados intensivos.")
